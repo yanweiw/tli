@@ -55,10 +55,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Paper">Paper</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#Poster">Poster</a>
-                </li>                
+                </li>              
                 <li class="nav-item">
                     <a class="nav-link" href="#Teaser">Teaser</a>
                 </li>
@@ -71,6 +68,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#Museum">Museum Demo</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Poster">Poster</a>
+                </li>                  
             </ul>
         </div>
     </nav>
@@ -92,19 +92,29 @@
         </div>
     </div><br>
 
-    <div class="container" style="padding-top: 10px; font-size: 20px">
-        <div align="center">
-            <div class="center">
-                <img class="img-responsive img-rounded" src="figs/n2n.gif" style="width:100%" alt="">
-            </div>
-        </div>
-    </div><br>
+
+
+         <div class="row justify-content-md-center">
+             <div class="col-md-10 embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="figs/teaser05.mp4" title="Teaser" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <iframe width="560" height="315" src="figs/noise2ptz_teaser.mp4" title="Teaser" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+             </div>
+         </div><br>
 
 
     <!-- Abstract -->
     <div class="container">
         <h4 id="Abstract" style="padding-top: 70px; margin-top: -80px; ">Abstract</h4>
         <hr>
+
+        <div class="container" style="padding-top: 10px; font-size: 20px">
+            <div align="center">
+                <div class="center">
+                    <img class="img-responsive img-rounded" src="figs/system.png" style="width:90%" alt="">
+                </div>
+            </div>
+        </div><br>
+
         <div style="text-align: justify">
             Learning from demonstration (LfD) has succeeded in tasks featuring a long time horizon. However, when the problem complexity also includes human-in-the-loop perturbations, state-of-the-art approaches do not guarantee the successful reproduction of a task. In this work, we identify the roots of this challenge as the failure of a learned continuous policy to satisfy the discrete plan implicit in the demonstration. By utilizing modes (rather than subgoals) as the discrete abstraction and motion policies with both mode invariance and goal reachability properties, we prove our learned continuous policy can simulate any discrete plan specified by a linear temporal logic (LTL) formula. Consequently, an imitator is
             robust to both task- and motion-level perturbations and guaranteed to achieve task success.
@@ -163,7 +173,7 @@
         <div class="row justify-content-md-center">
             <div class="col-md-10 embed-responsive embed-responsive-16by9">
                 <video controls>
-                    <source src="figs/" type="video/mp4">
+                    <source src="figs/corl_teaser_small.mp4" type="video/mp4">
                 </video>
             </div>
         </div>                
@@ -175,7 +185,7 @@
         <div class="row justify-content-md-center">
             <div class="col-md-10 embed-responsive embed-responsive-16by9">
                 <video controls>
-                    <source src="figs/" type="video/mp4">
+                    <source src="figs/corl_oral_small.mp4" type="video/mp4">
                 </video>
             </div>
         </div>        
@@ -184,14 +194,49 @@
     <div class="container">
         <h4 id="MoreVideos" style="padding-top: 30px; margin-top: -40px;">More Videos</h4>
         <hr>
-        <div class="row">
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 embed-responsive embed-responsive-16by9">
+                <video controls>
+                    <source src="figs/simulation_video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div><br>    
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 embed-responsive embed-responsive-16by9">
+                <video controls>
+                    <source src="figs/exp1_human_perturb.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div><br>    
+
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 embed-responsive embed-responsive-16by9">
+                <video controls>
+                    <source src="figs/exp2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div><br>     
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 embed-responsive embed-responsive-16by9">
+                <video controls>
+                    <source src="figs/exp3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div><br>           
+
+<!--         <div class="row">
             <div class="col-md-12">
                 <ul>
                     <table class="center">
                         <tr style=font-size:15pt>
-                            <td style='text-align:center; vertical-align:middle; color:#A31F34' colspan="2">Perturbations                             
+                            <td style='text-align:center; vertical-align:middle; color:#A31F34' colspan="2">Simulation experiments                             
                                 <p></td>
-                        </tr>
+                        </tr>    
+
                         <tr>
                             <td>
                                 <img class="img-responsive img-rounded" src="figs/" style="width:90%" alt="">
@@ -220,14 +265,14 @@
                 </ul>
             </div>
         </div>
-    </div><br><br><br>
+    </div><br><br><br> -->
 
     <div class="container">
         <h4 id="Museum" style="padding-top: 30px; margin-top: -40px;">MIT Museum Demo</h4>
         <hr>
         <div class="row justify-content-md-center">
             <table>
-                <tr style=font-size:15pt><td style='text-align:center; vertical-align:middle; color:#A31F34' colspan="1">A permanent interactive exhibition at MIT museum using robust LfD <p></td></tr><br>
+                <tr style=font-size:15pt><td style='text-align:center; vertical-align:middle; color:#A31F34' colspan="1">A permanent interactive exhibition at <a href="https://mitmuseum.mit.edu/">MIT museum</a> of programming robots via demonstrations<p></td></tr><br>
             </table>
             <div class="col-md-10 embed-responsive embed-responsive-16by9">
                 <video controls>
@@ -242,7 +287,7 @@
         <h4 id="Poster" style="padding-top: 30px; margin-top: -40px;">Poster</h4>
         <hr>
         <div class="row justify-content-md-center">
-            <iframe src="figs" width="100%" height="500px"></iframe>
+            <iframe src="figs/tli_hill_poster.pdf" width="100%" height="500px"></iframe>
         </div>
     </div><br><br><br>
 
