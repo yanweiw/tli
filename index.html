@@ -69,7 +69,7 @@
                     <a class="nav-link" href="#Museum">Museum Demo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Poster">Poster</a>
+                    <a class="nav-link" href="#Related">Related Works</a>
                 </li>                  
             </ul>
         </div>
@@ -143,7 +143,8 @@
               <a href="https://github.com/yanweiw/tli">code</a> /
               <a href="https://twitter.com/NewsHour/status/1610425346259619840">PBS News Coverage</a><br>
               <!-- <a href="" data-toggle="modal" data-target="#bibtex">bibtex</a><br> -->
-              <strong>CoRL 2022</strong> (<strong style="color:red;">Oral</strong>, acceptance rate: 6.5%)
+              <strong>CoRL 2022</strong> (<strong style="color:red;">Oral</strong>, acceptance rate: 6.5%)<br>
+              <strong>IROS 2023 Workshop</strong> (<strong style="color:red;">Best Student Paper</strong>, Learning Meets Model-based Methods for Manipulation and Grasping Workshop)
               </em><br>
             </td>
 <!--             <div class="modal fade" id="bibtex" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -228,7 +229,17 @@
                     <source src="figs/corl_oral_small.mp4" type="video/mp4">
                 </video>
             </div>
-        </div><br><br>       
+        </div><br><br>     
+        
+        
+        <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="row justify-content-md-center">
+                <div style='text-align: center; width: 90%; font-size: 18px; color:#A31F34; width: 70%;' >
+                    <b>How TLI (yellow box) fits in relation to prior work (gray boxes)</b>
+                </div><br><br>
+                <img src='figs/tli_related.jpg' style="width:70%" alt="">
+            </div>
+        </td><br><br>
 
 
         <div class="row">
@@ -476,12 +487,47 @@
 
     <!-- Poster -->
     <div class="container">
-        <h4 id="Poster" style="padding-top: 30px; margin-top: -40px;">Poster</h4>
+        <h4 id="Related" style="padding-top: 30px; margin-top: -40px;">Related Works - Extending TLI by Learning instead of Engineering Sensor Models</h4>
         <hr>
-        <img class="img-responsive img-rounded" src="figs/tli_hill_poster.png" style="width:100%" alt="">
+        <!-- <img class="img-responsive img-rounded" src="figs/tli_hill_poster.png" style="width:100%" alt=""> -->
         <!-- <div class="row justify-content-md-center">
             <iframe src="figs/tli_hill_poster.pdf" width="100%" height="500px"></iframe>
         </div> -->
+
+        <table class="center">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                    <img src='figs/scoop.jpg' width="300">
+                </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2403.17124">
+                    <papertitle>Grounding Language Plans in Demonstrations through Counterfactual Perturbations</papertitle>
+                </a>
+                <br>
+                <strong>Yanwei Wang</strong>,
+                Tsun-Hsuan Wang,
+                Jiayuan Mao,
+                Michael Hagenow,
+                Julie Shah
+                <em><br>
+                    <a href="https://arxiv.org/abs/2403.17124">paper</a>
+                    /
+                    <a href="https://sites.google.com/view/grounding-plans">project page</a>
+                    <br>
+                    <strong>ICLR 2024</strong> (<strong style="color:red;">Spotlight</strong>, acceptance rate: 5%)
+                </em><br>
+                <p>This work learns grounding classifiers for LLM planning. By locally perturbing a few human demonstrations, we
+                    augment
+                    the dataset with more successful executions and failing counterfactuals. Our end-to-end explanation-based
+                    network is
+                    trained to differentiate successes from failures and as a by-product learns classifiers that ground continuous
+                    states
+                    into discrete manipulation mode families without dense labeling.</p>
+            </td>
+        </table>
+
+
     </div><br><br>
 
     <!-- Bootstrap core JavaScript -->
